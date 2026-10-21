@@ -444,7 +444,6 @@
 
     if (ok) {
       setStatus('Armando el .zip…');
-      out.file('Convertir a PDF (Mac).command', MAC_SCRIPT, { unixPermissions: 0o100755 });
       out.file('Convertir a PDF (Windows).bat', WIN_SCRIPT);
       const zipBlob = await out.generateAsync({ type: 'blob', platform: 'UNIX', compression: 'DEFLATE' });
       const stamp = new Date().toISOString().slice(0, 10);

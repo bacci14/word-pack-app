@@ -4,7 +4,7 @@ Página para editar varios documentos de Word a la vez:
 
 1. **Buscar y reemplazar** palabras en todos los documentos (cuerpo, tablas, cuadros de texto, encabezados y pies).
 2. **Portada y encabezado, uno por uno**: para cada documento tildás si querés cambiarlos; la app muestra las fechas que encontró (por ejemplo `22/10/2026`) y escribís la nueva, o la elegís del calendario y la app respeta el formato.
-3. **Descarga** un `.zip` con los Word editados y dos scripts que los pasan todos a PDF con Microsoft Word.
+3. **Descarga** un `.zip` con los Word editados, listos para pasar a PDF con Microsoft Word.
 
 Los archivos se procesan **dentro del navegador**: no se suben a GitHub ni a ningún servidor.
 
@@ -21,14 +21,12 @@ Con una cuenta gratuita, una página de GitHub Pages es pública: cualquiera que
 
 ## Pasar los Word a PDF
 
-Después de **Procesar y descargar**:
+Después de **Procesar y descargar**, abrí el `.zip` descargado y entrá a la carpeta.
 
-1. Abrí el `.zip` descargado (doble clic) y entrá a la carpeta.
-2. **Mac:** clic derecho en `Convertir a PDF (Mac).command` → **Abrir** → **Abrir** (la primera vez macOS pide confirmar porque el archivo viene de internet).
-   **Windows:** doble clic en `Convertir a PDF (Windows).bat`.
-3. Word abre cada documento, lo exporta a PDF y lo cierra. Los PDF quedan en la misma carpeta.
+- **Mac:** seleccioná los Word (Cmd+A), clic derecho → **Acciones rápidas → Convertir a PDF**. También funciona con clic derecho sobre la carpeta entera. Esta opción se instala una sola vez en `~/Library/Services/Convertir a PDF.workflow`.
+- **Windows:** doble clic en `Convertir a PDF (Windows).bat`.
 
-En Mac, la primera vez Word puede pedir permiso para acceder a la carpeta: tocá **Seleccionar** / **Conceder acceso**. Si el Mac te pregunta si la Terminal puede controlar Microsoft Word, respondé que sí.
+Word exporta cada documento y deja los PDF en la misma carpeta. La primera vez, la Mac puede preguntar si se permite controlar Microsoft Word (respondé **Permitir**) y Word puede pedir acceso a la carpeta (**Seleccionar** / **Conceder acceso**).
 
 ## Notas
 
